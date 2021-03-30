@@ -1,0 +1,3 @@
+include ':app:shanyanlibrary'
+include ':app'
+rootProject.name = "shanyanlib"
