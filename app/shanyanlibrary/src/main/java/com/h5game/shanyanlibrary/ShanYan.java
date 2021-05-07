@@ -12,7 +12,8 @@ import com.chuanglan.shanyan_sdk.tool.ShanYanUIConfig;
 import com.h5game.thirdpartycallback.ThirdPartyCallback;
 
 public class ShanYan extends ThirdPartyCallback {
-    public ShanYan(Activity activity, String appId){
+    public ShanYan(Activity activity, String appId, String className){
+        super(className);
         mActivity = activity;
 
         OneKeyLoginManager.getInstance().init(mActivity, appId, (code, result) -> getPhoneInfo());
